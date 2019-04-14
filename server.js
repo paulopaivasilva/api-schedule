@@ -3,6 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const requireDir = require('require-dir')
 
+
 //iniciando o app
 const app = express()
 app.use(express.json())
@@ -15,7 +16,7 @@ mongoose.connect('mongodb+srv://admin:teste123@progrinter-bjydy.mongodb.net/node
 requireDir('./src/models')
 
 //definindo resposta da rota raiz
-app.use('/api', require('./src/routes'))
+app.use('/', require('./src/routes'))
 
 //porta em que está sendo executado o servidor
 //app.listen(3001)
