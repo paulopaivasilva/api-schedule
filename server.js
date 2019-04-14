@@ -21,4 +21,4 @@ app.use('/', require('./src/routes'))
 //porta em que está sendo executado o servidor
 //app.listen(3001)
 var porta = process.env.PORT || 3001;
-app.listen(5000)
+app.listen(porta)
