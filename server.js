@@ -21,3 +21,4 @@ app.use('/api', require('./src/routes'))
 //app.listen(3001)
 var porta = process.env.PORT || 3001;
 app.listen(porta)
+console.log(porta)
