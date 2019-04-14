@@ -19,5 +19,5 @@ app.use('/api', require('./src/routes'))
 
 //porta em que está sendo executado o servidor
 //app.listen(3001)
-//var porta = process.env.PORT || 8080;
-app.listen(8080);
+var porta = process.env.PORT || 3001;
+app.listen(porta)
