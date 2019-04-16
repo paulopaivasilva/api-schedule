@@ -19,7 +19,7 @@ mongoose.connect('mongodb+srv://admin:teste123@progrinter-bjydy.mongodb.net/node
 requireDir('./src/models')
 
 //definindo resposta da rota raiz
-app.use('/', require('./src/routes'))
+app.use('/api', require('./src/routes'))
 
 //porta em que está sendo executado o servidor
 //app.listen(3001)
