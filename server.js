@@ -13,7 +13,7 @@ app.use(cors())
 
 //conectando o banco
 //mongoose.connect('mongodb://127.0.0.1:27017/nodeapi', {useNewUrlParser: true})
-mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true})
+mongoose.connect('mongodb+srv://admin:teste123@progrinter-bjydy.mongodb.net/nodeapi', {useNewUrlParser: true})
 
 //importando o model da schema
 requireDir('./src/models')
