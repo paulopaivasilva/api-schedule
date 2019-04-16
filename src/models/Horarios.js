@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
 const HorarioSchema = new mongoose.Schema({
+    id: {
+        type: String,
+        required: true
+    },
     date: {
         type: String,
         required: true
