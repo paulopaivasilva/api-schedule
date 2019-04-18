@@ -24,6 +24,10 @@ const HorarioSchema = new mongoose.Schema({
     type: {
         type: String,
         required: true
+    },
+    status: {
+        type: Boolean,
+        required: true
     }
 })
 
