@@ -13,7 +13,7 @@ module.exports = {
     },
 
     async changeStatus(req, res){
-        const horario = await Horarios.update({id: req.id}, {$set: {status: req.status}})
+        const horario = await Horarios.update({id: req.id}, {$set: {status: req.status}}, {upsert: true})
         return res.json(horario)
     }
 }
