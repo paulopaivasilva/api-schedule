@@ -10,12 +10,13 @@ const app = express()
 app.use(express.json())
 app.use(express.static(__dirname + '/'))
 app.use(cors())
-uri = 'mongodb://admin:teste123@progrinter-bjydy.mongodb.net/nodeapi'
+//uri = 'mongodb://admin:teste123@progrinter-bjydy.mongodb.net/nodeapi'
+uri = 'mongodb+srv://admin_1:admin@progrinter.bjydy.mongodb.net/nodeapi?authSource=admin&replicaSet=progrinter-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true'
 
 //conectando o banco
 //mongoose.connect('mongodb://127.0.0.1:27017/nodeapi', {useNewUrlParser: true})
 //mongoose.connect('mongodb+srv://admin:teste123@progrinter-bjydy.mongodb.net/nodeapi', {useNewUrlParser: true})
-mongoose.connect('mongodb://admin:teste123@ds151853.mlab.com:51853/heroku_174nnncr', {useNewUrlParser: true})
+mongoose.connect(uri, {useNewUrlParser: true})
 
 
 //importando o model da schema
